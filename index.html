@@ -349,26 +349,51 @@
           </div>
         </section>
 
-        <aside id="cart-box" class="col-span-12 lg:col-span-2">
-          <div class="bg-white p-5 rounded">
-            <h2 class="font-bold mb-5">Have a Cupon</h2>
+
+ <!-- ------------------ -->
+
+
+        <aside id="cart-box" class="col-span-12 lg:col-span-2">  
+
+   <div class="form cart-box bg-white mt-10 p-5" id='transactions-parent' >
+          <div class="flex justify-between items-center">
+            <h1 class="my-5 font-semibold"> <i class="fa-solid fa-clock "></i> Call History</h1>
           
+            <button class="btn rounded-3xl bg-[#00A63E] text-xl items-center gap-2 text-white p-5">Clear</button>
           </div>
-          <div class="cart-box bg-white mt-10 p-5">
-            <h2 class="font-bold">Cart</h2>
-            <button class="btn" id="btn-clear">Clear</button>
-            <div class="space-y-5" id="cart-container"></div>
-            <div class="">
-              <h2>Total Price: <span id="total-price">0</span> TK</h2>
-              <h2>Total Quantity: <span id="total-quantity">0</span> Items</h2>
-              <button class="btn bg-pink-500 text-white btn-block">
-                Make Purchase
-              </button>
+
+
+
+          <div id='transaction-container'>
+             <div class="bg-[#dddde0] rounded-xl p-3 flex justify-between items-center mt-3">
+              <div class="flex items-center">
+                  <div class="p-3 rounded-full bg-[#a3a3a4]">
+                    <img src="./assets/wallet1.png" class="mx-auto" alt="" />
+                  </div>
+                  <div class="ml-3">
+                    <h1>${data.name}</h1>
+                    <p>${data.date}</p>
+                  </div>
+              </div>
+      
+              <i class="fa-solid fa-ellipsis-vertical"></i>
             </div>
+            
+          </div>
+         </div>
+
+
+
+
+           
           </div>
         </aside>
       </section>
-    
+
+
+     
+
+
 
 </main>
     
