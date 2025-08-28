@@ -39,12 +39,22 @@
         </svg>
     </button>
     <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-      <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
-        
-       <button class="btn rounded-3xl bg-[#41FF6B1A] text-xl items-center gap-2  p-5">0<i class="fa-solid fa-heart" style="color: #f20742;"></i></button>
-       <button class="btn rounded-3xl bg-[#41FF6B1A] text-xl items-center gap-2  p-5">100<i class="fa-solid fa-star" style="color: #FFD43B;"></i> 
-      </button>
-       <button class="btn rounded-3xl bg-[#00A63E] text-xl items-center gap-2 text-white p-5"><span> 0</span>copy</button>
+
+      <!-- ul section  -->
+      <ul class="font-medium flex flex-col items-center p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
+
+        <!-- love div -->
+        <div class=" flex justify-between  items-center  rounded-3xl bg-[#70e88a45] text-lg gap-2  p-3  ">
+          <h1>0</h1>
+          <img class="h-8 w-8"  src="./assets/heart.png" alt="">
+        </div>
+        <!-- coin div -->
+        <div class=" flex justify-between  items-center  rounded-3xl bg-[#70e88a45] text-lg gap-2  p-3   ">
+          <h1>100</h1>
+          <img class="h-8 w-8"  src="./assets/coin.png" alt="">
+        </div>
+        <!-- copy button  -->
+       <button class="btn text-xl items-center gap-2 p-6  bg-[#05b245] rounded-3xl text-white "><span> 0</span>copy</button>
        
       </ul>
     </div>
@@ -52,10 +62,12 @@
 </nav>
     </header>
 
+    <!-- main section  -->
+
 
     <main class="bg-[#e6f6f1]"  >
         <!-- hero section  -->
-        <section class="bg-[#006747] min-h-[239px] p-10 ">
+        <section class="bg-[#006747] min-h-[239px] w-full p-10 ">
             <div class=" text-white flex flex-col items-center justify-center gap-5 text-center">
                 <img class="h-15" src="./assets/logo.png" alt="">
                 <h1 class="font-bold text-xl">Emergency Service Directory</h1>
@@ -95,7 +107,7 @@
                 
 
                 <div class="card-body items-start ">
-                  <h4 class="font-bold text-xl">National Emergency Number</h4>
+                  <h4 >National Emergency Number</h4>
             <p class="text-gray-500 font-semibold ">National Emergency</p>
            <h1 class="font-bold text-3xl mt-5"> 999 </h1>
                   <p class="text-sm  bg-gray-200 text-center p-3 rounded-xl "> All</p>
@@ -167,7 +179,7 @@
               </div>
 
 
-              <!--t card 3  -->
+              <!-- card 3  -->
               
               <div class="card bg-base-100 shadow-lg p-2 h-auto w-full">
                 <div class=" m-5 flex justify-between items-center"> 
@@ -477,44 +489,39 @@
  <!-- ------------------ -->
 
 
-        <aside id="cart-box" class="col-span-12 lg:col-span-2 mx-auto ">  
+        <aside id="cart-box" class="col-span-12 lg:col-span-2 mx-auto  ">  
 
-   <div class="form cart-box bg-white p-3 rounded-lg shadow-md " id='transactions-parent' >
-          <div class="flex justify-between items-center  ">
+   <div class="form cart-box bg-white p-2 rounded-lg shadow-md " id='transactions-parent' >
+          <div class="flex justify-between items-center gap-5 ">
             <h1 class="my-2 font-semibold  flex items-center gap-2 "> <i class="fa-solid fa-clock "></i> Call History</h1>
           
             <button class="btn rounded-3xl bg-[#00A63E] text-sm  gap-2 text-white p-5">Clear</button>
           </div>
 
 
-
-          <div id='transaction-container'>
-             <div class="bg-[#dddde0] rounded-xl p-3 flex justify-between items-center mt-3">
-              <div class="flex items-center ">
-                  <div class="p-3 rounded-full bg-[#a3a3a4]">
-                    <img src="./assets/wallet1.png" class="mx-auto" alt="" />
+           <!-- history data  -->
+            
+          <div id='history-container'>
+             <div class="bg-[#f8f8fa] rounded-xl p-3 flex justify-between items-center mt-3">
+              <div class="flex justify-between items-center gap-5">
+                  
+                  <div class=" " >
+                    <h1 class="font-bold text-sm">Fire Service Number</h1>
+                    <p class="text-gray-500 font-semibold text-sm">109</p>
                   </div>
-                  <div class="ml-3" >
-                    <h1>${data.name}</h1>
-                    <p>${data.date}</p>
-                  </div>
+                  <p class="font-semibold">10.50pm</p>
               </div>
-              <p>date</p>
-      
+              
            
             </div>
             
           </div>
          </div>
 
-
-
-
-           
           </div>
         </aside> 
      
-   <!-- Responsive Aside
+  
 
    
 
