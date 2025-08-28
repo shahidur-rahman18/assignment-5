@@ -353,30 +353,31 @@
  <!-- ------------------ -->
 
 
-        <aside id="cart-box" class="col-span-12 lg:col-span-2">  
+        <aside id="cart-box" class="col-span-12 lg:col-span-2 mx-auto ">  
 
-   <div class="form cart-box bg-white mt-10 p-5" id='transactions-parent' >
-          <div class="flex justify-between items-center">
-            <h1 class="my-5 font-semibold"> <i class="fa-solid fa-clock "></i> Call History</h1>
+   <div class="form cart-box bg-white p-3 rounded-lg shadow-md " id='transactions-parent' >
+          <div class="flex justify-between items-center  ">
+            <h1 class="my-2 font-semibold  flex items-center gap-2 "> <i class="fa-solid fa-clock "></i> Call History</h1>
           
-            <button class="btn rounded-3xl bg-[#00A63E] text-xl items-center gap-2 text-white p-5">Clear</button>
+            <button class="btn rounded-3xl bg-[#00A63E] text-sm  gap-2 text-white p-5">Clear</button>
           </div>
 
 
 
           <div id='transaction-container'>
              <div class="bg-[#dddde0] rounded-xl p-3 flex justify-between items-center mt-3">
-              <div class="flex items-center">
+              <div class="flex items-center ">
                   <div class="p-3 rounded-full bg-[#a3a3a4]">
                     <img src="./assets/wallet1.png" class="mx-auto" alt="" />
                   </div>
-                  <div class="ml-3">
+                  <div class="ml-3" >
                     <h1>${data.name}</h1>
                     <p>${data.date}</p>
                   </div>
               </div>
+              <p>date</p>
       
-              <i class="fa-solid fa-ellipsis-vertical"></i>
+           
             </div>
             
           </div>
@@ -387,7 +388,12 @@
 
            
           </div>
-        </aside>
+        </aside> 
+     
+   <!-- Responsive Aside
+
+   
+
       </section>
 
 
