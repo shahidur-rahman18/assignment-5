@@ -2,6 +2,21 @@
 let counter = 0;
 const text = document.getElementById("love-counter");
 const clicksCount = document.querySelectorAll(".love-btn");
+ clicksCount.forEach(btn=>{
+  btn.addEventListener('click',function(){
+    if(btn.querySelector('img')){
+      btn.innerHTML= `<i class="fa-regular fa-heart" style="color:#fa0511; font-size:40px;"></i>
+      `
+    }
+    else{
+      btn.innerHTML= ` <img src="./assets/heart.png" width="40" height="40">`
+    }
+  })
+
+ })
+  
+
+
 for (const click of clicksCount) {
   click.addEventListener("click", function () {
     counter++;
@@ -94,3 +109,15 @@ for (let i = 0; i < copyBtns.length; i++) {
       });
   });
 }
+
+
+
+
+
+
+
+/////////love btn add
+
+
+
+const heartBtn= document.querySelectorAll('')
