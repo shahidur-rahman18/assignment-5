@@ -66,7 +66,7 @@ clearBtn.addEventListener("click", function () {
   historyContainer.innerHTML = "";
 });
 
-// add cussor pointer
+// add mouse cursor pointer
 
 const callBtns = document.querySelectorAll(".call-btn");
 const copyBtns = document.querySelectorAll(".copy-btn");
