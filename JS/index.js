@@ -40,6 +40,7 @@ for (let i = 0; i < totalCall.length; i++) {
         point.innerText = val;
         const number = numbers[i].innerText;
         const title = numbers[i].parentElement.querySelector("h4").innerText;
+        const subTitle= numbers[i].parentElement.querySelector(".sub-title ").innerText;
         const now = new Date();
         const time = now.toLocaleTimeString("en-US", { hour12: true });
         console.log(time);
@@ -64,11 +65,12 @@ for (let i = 0; i < totalCall.length; i++) {
         if (val === 0) {
           alert("Not enough coins");
         } else {
-          alert("📞 Your Number is Calling: " + number);
+          alert(`📞 ${subTitle} is Calling: ${number}`);
+
         }
       }
     } else {
-      alert("❌ Not enough coins");
+      alert("❌Not enough coins");
     }
   });
 }
