@@ -49,11 +49,11 @@ for (let i = 0; i < totalCall.length; i++) {
         if (val === 0) {
           alert("Not enough coins");
         } else {
-          alert("📌 Your Number is Calling: " + number);
+          alert("📞 Your Number is Calling: " + number);
         }
       }
     } else {
-      alert("Not enough coins");
+      alert("❌ Not enough coins");
     }
   });
 }
