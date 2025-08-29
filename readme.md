@@ -1,165 +1,83 @@
-## WELCOME TO ( সহজ সরল সিম্পল ) ASSIGNMENT-005
+## Answer the following questions clearly:
 
-### 📅 Deadline For 60 marks: 29th August, 2025 (11:59 pm ⏱️)
+## 1. What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
 
-### 📅 No Deadline For 50 marks
-
-### 📅 Deadline For 30 marks: Any time after 29th August.
-
----
-
-## ✅ Main Requirements (50 Marks)
-
-### 1. Navbar
-
-- **Website name & logo** on the left as Figma
-- **Heart icon, coin count (default-100), and Copy Count** on the right as Figma
-
----
-
-### 2. Hero Section
-
-- **Background Gradient** in the Whole Section
-- **A Relevant Logo** at the top-center
-- **Section Title** in the center
-- **A Relevant Slogan** in the bottom Center
-
----
-
-### 2. Main Section
-
-This Section will have layout as figma
-
+### Ans: 
 <table border=1 width="100%" cellpadding="50">
 <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td >getElementById</td>
+    <td > getElementsByClassName</td>
+    <td >querySelector / querySelectorAll</td>
  </tr>
- <tr>
-    <td colspan=9 >Card Section</td>
-    <td colspan=3>History Section</td>
+    <tr>
+    <td>Working with id</td>
+    <td>Working with class</td>
+    <td>Working with id,class, attribute, pseudo-class and pseudo-element selectors
+    </td>
+    
  </tr>
+  <tr>
+    <td>Find Only one element</td>
+    <td>Find all elements under the class </td>
+    <td>Find the first matching element</td>
+    
+ </tr>
+  <tr>
+    <td>Use to Limited requirement </td>
+    <td>Use to find similar type value get</td>
+    <td>Use in complex css</td>
+    
+ </tr>
+  <tr>
+    <td>Very faster</td>
+    <td>Slower than (getElementById)</td>
+    <td>More slower both of them </td>
+    
+ </tr>
+
 </table>
 
-### Emergency Hotline Section
 
-- **Show Minimum 6 cards**. Each card will contain:
-  - Icon or Image
-  - Relevant Name
-  - Relevant Name in English
-  - Hotline number for calling
-  - Category Badge
-  - 💗 icon at left
-  - **2 buttons** at the bottom: Copy and Call with icons as Figma
 
-### History Section
+##
+## 2. How do you create and insert a new element into the DOM?
 
-- **A white Background** in the whole section
-- **History Title with icon** at the top-left as Figma
-- **Clear History Button** at the top-right as Figma
+### Ans: 
+      
+👉 Looking like this :  
 
----
+```js
+const value = document.createElement("value-id");  
+div.innerText = "Hello!";  
+document.body.appendChild(div);  
 
-### 3. Responsiveness (5 Marks)
-
-- Website should be fully **responsive for mobile devices** (implementation up to you)
-
----
-
-## Functionalities
-
-### 4. Heart Icons
-
-- Clicking on the 💗 **heart icon** of any card will increase the count in the Navbar
-
----
-
-### 5. Call Buttons
-
-- On clicking a card's **Call Button**, following actions will happen:
-  - Show an **alert** with a message including the service name and number
-  - Each call will **cut 20 coins**. Reduce Coin after each click.
-  - If coins are less than 20, show a relevant alert and terminate the process.
-  - Add this service into the **Call History section** with:
-    - Service name
-    - Service number
-
----
-
-### 5. Call History Section
-
-- Show all called services with name & number. This will empty initially. when call button clicked it will filled dynamically.
-- A **Clear History button** on the right
-- Clicking this button will remove all data from call history
-
----
-
-## Create Readme
-
-You have to create a `Readme.md` file. and write down following questions. Dont Try to copy paste from AI Tools. Just write what you know about these. If you don't know , then search , learn , understand and then write.
-
-### 6. Answer the following questions clearly:
-
-1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
-2. How do you **create and insert a new element into the DOM**?
-3. What is **Event Bubbling** and how does it work?
-4. What is **Event Delegation** in JavaScript? Why is it useful?
-5. What is the difference between **preventDefault() and stopPropagation()** methods?
-
----
-
-## 🧪 Challenges Part (10 Marks)
-
-- On clicking the **Copy button**, show an alert and **increase the copy count** (3 Marks)
-
-- Hotline number will be **copied on click** so it can be pasted anywhere (4 Marks)
-
-💡Hint: You can ask for Help from `ChatGPT` Mamma . Just copy the below prompt , generate answer. use it with your own way.
-
-```bash
-I have a card with some text and a button inside it. I want that when a user clicks the button, some specific text from the card is copied to the clipboard using JavaScript. Please provide the code and explain it step by step.
 ```
+##
+## 3. What is Event Bubbling and how does it work?
+### Ans:
+Even Bubbling means anyone click on a child element, first response or runs on that element and then parent will 'bubbles up' then grand paren and so on 
 
-- After clicking on the **Call button**, the **exact time of the call** will be shown in the Call History section (3 Marks)
+#### Example: click a ---> button (child) ----> then div (parent) ---> then body (root/ grandparent)
+##
 
-💡Hint: Search Google with that below question
 
-```bash
-How to get current local time in js
-```
 
----
+## 4.What is Event Delegation in JavaScript? Why is it useful?
+### Ans: 
+In JavaScript , Put one event on a parent and it works for every child element is called event delegation.
 
-## ⚙️ Technology Stack
+why use ? 
+- save memory
+- easier code
+- less code 
+- works for new element
+##
 
-- HTML
-- CSS ( Vanilla , Tailwind CSS , DaisyUI , Others - wheatever you like )
-- JavaScript ( Vanilla only. No Framework / Library Allowed )
+## 5. What is the difference between preventDefault() and stopPropagation() methods?
 
----
+### Ans:  
+#### preventDefault() : Work on stopping browser default action.
+- like - click a link won't response or open.
 
-## 📌 Rules
-
-- ✅ Minimum **5 meaningful commits** required
-- ❌ No Lorem Ipsum or dummy placeholder text. Use **relevant content only**
-
----
-
-## 🔗 What to Submit
-
-- 📂 **GitHub Repository**
-- 🌐 **Live Link**
-
----
-
-# Let's Code and Achieve your Dream 🎯
+#### stopPropagation(): Work on stop event from going up ("bubbling")
+- like- click a button (child) inner of a div (parent) won't trigger the div's click. 
